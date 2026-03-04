@@ -226,7 +226,7 @@ const setOptions = (e, type) => {
     if (type === 'dark' || type === 'light')
         options.value.color[type] = value
     options.value[type] = value
-    generateQR(qrValue, options.value)
+    generateQR(qrValue.value)
 }
 
 const changeLanguage = () => {
